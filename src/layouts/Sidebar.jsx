@@ -14,6 +14,7 @@ import { useState } from "react";
 
 const Sidebar = () => {
 
+    // Sidebar Navigation Button Data
     const allNavigations = [
         {item: "Dashboard", icon: TbSquareKey},
         {item: "Products", icon: AiFillUnlock},
@@ -23,12 +24,15 @@ const Sidebar = () => {
         {item: "Help", icon: FaMessage},
     ]
 
+    // Current navigation button state
     const [currentNav, setCurrentNav] = useState(allNavigations[0].item);
 
+    // show mobile sidebar state
     const [showMobileSidebar, setShowMobileSidebar] = useState(false);
 
   return (
     <aside>
+        {/* Desktop sidebar */}
         <div className="bg-sky-950 lg:w-[300px] h-screen md:flex flex-col text-white hidden ">
             <div className="flex flex-row p-6 font-bold text-lg align-baseline">
                 <RiSettingsLine className="w-8 h-8 mx-2" />
@@ -61,6 +65,8 @@ const Sidebar = () => {
                 </div>
             </div>
         </div>
+
+        {/* Mobile Sidebar */}
         <div className="block md:hidden w-full bg-sky-900 top-0  fixed z-10">
             <div className="flex flex-row text-white font-bold text-lg align-baseline p-4">
                 <RiSettingsLine className="w-8 h-8 mx-2" />

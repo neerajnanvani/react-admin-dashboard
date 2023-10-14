@@ -3,6 +3,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const ProductsTable = () => {
 
+    // Random data for table
     const randomTableData = [
         {title: "Abstract 3d", subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugit", stock: "100", price: "45.1", sales: "40"},
         {title: "Random Ways", subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ", stock: "50", price: "21.2", sales: "10"},

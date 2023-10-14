@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const SingleCard = ({icon:Icon, color, headline, amount, isGain, gainOrLosspercentage, timeline}) => {
 
+    // writing colors here because tailwind want them to compile / read first then dynamic would work
     let bgColor = `bg-green-100`;
     let iconColor = `text-green-600`;
 
@@ -52,6 +53,8 @@ const SingleCard = ({icon:Icon, color, headline, amount, isGain, gainOrLossperce
   )
 }
 
+
+// Prop types 
 SingleCard.propTypes = {
     color: PropTypes.string,
     headline: PropTypes.string,

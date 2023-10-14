@@ -1,7 +1,6 @@
-
-
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
+// header for home page
 const Header = () => {
   return (
     <div className="flex sm:flex-row flex-col">

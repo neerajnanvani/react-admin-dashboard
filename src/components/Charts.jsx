@@ -3,6 +3,7 @@ import Chart from 'react-apexcharts'
 
 const Charts = () => {
 
+    // bar graph static data
     const barGraphData = [
         {month: "Jan", height: "1"},
         {month: "Feb", height: "3"},
@@ -18,6 +19,7 @@ const Charts = () => {
         {month: "Dec", height: "3"},
     ]
 
+    // state for current month in chart
     const [currentMonth, setCurrentMonth] = useState(barGraphData[0].month);
 
   return (
@@ -44,7 +46,7 @@ const Charts = () => {
                     </option>
                 </select>
             </div>
-
+            {/* Graph */}
             <div className="h-4/5 flex md:space-x-3 space-x-2 overflow-x-scroll sm:overflow-hidden">
                 {barGraphData.map((data) => (
                     <div key={data.month} className="flex h-full items-center flex-col w-1/12">
@@ -63,6 +65,7 @@ const Charts = () => {
             <h6 className='text-sm text-gray-500'>
                 Customers that buy products
             </h6>
+            {/* Chart */}
             <Chart 
                 options={{}} 
                 series={ [44, 55, 41, 17, 15]} 

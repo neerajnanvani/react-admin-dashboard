@@ -4,6 +4,7 @@ import {FaSackDollar, FaBook } from "react-icons/fa6";
 
 const CardGroup = () => {
 
+  // All Cards properties
     const allCardsProperties = [
         {icon: FaSackDollar, color: "green", headline:"Earnings", amount: "123", isGain:true, gainOrLosspercentage: "45", timeline: "month" },
         {icon: FaBook, color: "purple", headline:"Orders", amount: "2.4", isGain:false, gainOrLosspercentage: "2", timeline: "month" },
